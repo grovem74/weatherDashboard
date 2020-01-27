@@ -1,0 +1,29 @@
+h1 {
+    color: white;
+}
+
+#details {
+    width: 40%; 
+}
+
+#pop {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+#five-day{
+    color: white;
+}
+
+#forecast {
+    color:black;
+}
+
+#launch {
+     margin-top: .5em;
+     margin-left: 3.75em;
+}
+
+#city-div {
+    margin-top: .5em;
+}
