@@ -1,4 +1,4 @@
-# woeatherDashboard
+# weatherDashboard
 
 ![Weather Dashboard](Assets/dashboard1.JPG)
 ![Weather Dashboard 2](Assets/dashboard2.JPG)
