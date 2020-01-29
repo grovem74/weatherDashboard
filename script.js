@@ -14,9 +14,9 @@ $("#search-city").on("click", function (event) {
 
     // Set the query URLs based on the chosen city  
     var currentCity = $("#city").val();
-    queryURL = "http://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + currentCity + "&APPID=" + apiKey;
-    queryURLUV = "http://api.openweathermap.org/data/2.5/uvi?&lat=" + lat + "&lon=" + lon + "&APPID=" + apiKey;
-    queryURLForecast = "http://api.openweathermap.org/data/2.5/forecast?units=imperial&q=" + currentCity + "&APPID=" + apiKey;
+    queryURL = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + currentCity + "&APPID=" + apiKey;
+    queryURLUV = "https://api.openweathermap.org/data/2.5/uvi?&lat=" + lat + "&lon=" + lon + "&APPID=" + apiKey;
+    queryURLForecast = "https://api.openweathermap.org/data/2.5/forecast?units=imperial&q=" + currentCity + "&APPID=" + apiKey;
 
     // Main API call
     $.ajax({
