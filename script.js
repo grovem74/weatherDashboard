@@ -1,7 +1,4 @@
 //variables
-
-var queryURL;
-var queryURLUV;
 var apiKey = "3127401310a0db8d29f47f672b5f03ef";
 var recentCities = [];
 var recentCitiesLocal = [];
