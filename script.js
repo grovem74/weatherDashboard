@@ -7,14 +7,7 @@ var recentCities = [];
 var recentCitiesLocal = [];
 var lon;
 var lat;
-//$("#city-1").text(recentCitiesLocal[0]);
-//$("#city-2").text(recentCitiesLocal[1]);
-//$("#city-3").text(recentCitiesLocal[2]);
-//$("#city-4").text(recentCitiesLocal[3]);
-//$("#city-5").text(recentCitiesLocal[4]);
-//$("#city-6").text(recentCitiesLocal[5]);
-//$("#city-7").text(recentCitiesLocal[6]);
-//$("#city-8").text(recentCitiesLocal[7]);
+
 // CLICK HANDLERS
 $("#search-city").on("click", function (event) {
     event.preventDefault();
@@ -22,7 +15,7 @@ $("#search-city").on("click", function (event) {
     // Set the query URLs based on the chosen city  
     var currentCity = $("#city").val();
     queryURL = "http://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + currentCity + "&APPID=" + apiKey;
-    queryURLUV = "http://api.openweathermap.org/data/2.5/uvi?&lat=$" + lat + "&lon=" + lon + "&APPID=" + apiKey;
+    queryURLUV = "http://api.openweathermap.org/data/2.5/uvi?&lat=" + lat + "&lon=" + lon + "&APPID=" + apiKey;
     queryURLForecast = "http://api.openweathermap.org/data/2.5/forecast?units=imperial&q=" + currentCity + "&APPID=" + apiKey;
 
     // Main API call
@@ -34,7 +27,6 @@ $("#search-city").on("click", function (event) {
         .then(function (response) {
             lon = response.coord.lon;
             lat = response.coord.lat;
-            //queryURLUV = "http://api.openweathermap.org/data/2.5/uvi?&lat=$" + lat + "&lon=" + lon + "&APPID=" + apiKey;
             // Transfer content to HTML
             $("#selected-city").html("<h3>" + response.name + " " + moment().format('(l)') + "</h3>");
             $("#temp").html("<h6>Temperature: </h6>" + response.main.temp + "&deg; F");
