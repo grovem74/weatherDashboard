@@ -1,14 +1,14 @@
+
 h1 {
     color: white;
 }
 
-#details {
-    width: 40%; 
+h3, h6 {
+    display: inline;
 }
 
-#pop {
-    padding-top: .5em;
-    padding-bottom: .5em;
+#details {
+    width: 40%; 
 }
 
 #five-day{
@@ -22,9 +22,43 @@ h1 {
 #launch {
      margin-top: .5em;
      padding-left: 7em;
-
 }
 
 #city-div {
     margin-top: .5em;
 }
+
+.low {
+    background-color: green;
+}
+
+.medium {
+    background-color: yellow;
+}
+
+.high {
+    background-color: orange;
+}
+
+.very-high {
+    background-color: red;
+}
+
+.extreme {
+    background-color: purple;
+}
+
+#uv {
+    padding: .25em;
+    border-radius: .5em;
+    width: 105px;
+}
+
+#icon {
+padding-left: 4em;
+}
+
+.container {
+    width: 100%;
+}
+
